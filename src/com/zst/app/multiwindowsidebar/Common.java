@@ -30,7 +30,7 @@ public class Common {
 	public static final String PREF_KEY_SIDEBAR_POSITION = "sidebar_position";
 	public static final String PREF_DEF_SIDEBAR_POSITION = "0";
 	public static final String PREF_KEY_LAUNCH_MODE = "launch_mode";
-	public static final String PREF_DEF_LAUNCH_MODE = "0";
+	public static final String PREF_DEF_LAUNCH_MODE = "3";
 	public static final String PREF_KEY_TAB_SIZE = "tab_size";
 	public static final int PREF_DEF_TAB_SIZE = 32;
 	public static final String PREF_KEY_LABEL_SIZE = "label_size";
