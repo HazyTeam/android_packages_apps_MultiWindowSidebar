@@ -15,18 +15,17 @@
 #
 
 LOCAL_PATH := $(call my-dir)
+
 include $(CLEAR_VARS)
 
-LOCAL_MODULE_TAGS := optional
-
-LOCAL_STATIC_JAVA_LIBRARIES := libarity android-support-v4 guava
-
-LOCAL_SRC_FILES := $(call all-java-files-under, src)
-
-LOCAL_SDK_VERSION := current
+LOCAL_SRC_FILES := $(call all-subdir-java-files)
 
 LOCAL_PACKAGE_NAME := MultiWindowSidebar
 
-include $(BUILD_PACKAGE)
+LOCAL_CERTIFICATE := platform
 
-include $(call all-makefiles-under,$(LOCAL_PATH))
+LOCAL_PRIVILEGED_MODULE := true
+
+LOCAL_MODULE_TAGS := optional
+
+include $(BUILD_PACKAGE)
